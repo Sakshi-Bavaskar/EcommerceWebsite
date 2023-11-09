@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce Website</title>
+    <!-- <link rel="stylesheet" href="./ecomm.css"> -->
+    <style>
+        header {
+            background-color: #e50a0a;
+            padding: 10px;
+        }
+
+        body {
+            height: 800px;
+            width: 95vw;
+
+        }
+
+        /* Styles for navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            flex-wrap: wrap;
+
+        }
+
+        nav ul li a {
+            color: red;
+            border: 5px rgb(5, 2, 2);
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        section {
+            border: 2px dotted black;
+
+            /* flex-wrap: wrap; */
+        }
+
+        .box {
+            height: 30vh;
+            width: 30vw;
+            cursor: pointer;
+            margin: 2vh 10vh;
+            background-color: rgb(228, 221, 221);
+            border: 5px double red;
+        }
+
+        .box img {
+            height: 20vh;
+            width: 20vw;
+        }
+
+        nav ul li a:hover {
+            background-color: #aea6a6;
+            color: #120404;
+            border: 2px solid black;
+        }
+
+        #brand1 {
+            background-color: #f38e8e;
+        }
+
+        #brand2 {
+            background-color: #fe7676;
+        }
+
+        #brand3 {
+            background-color: #d44f4f;
+        }
+
+        #brand4 {
+            background-color: #fc3c3c;
+        }
+    </style>
+    <!-- electronics -->
+    <style>
+        .electronic {
+            height: 200vh;
+            width: 100vw;
+            background-color: gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px double red;
+        }
+
+        .e img {
+            height: 200px;
+            width: 200px;
+            margin-left: 120px;
+            margin-top: 10px;
+        }
+
+        .e button {
+            background-color: blue;
+            color: white;
+        }
+
+        .e button:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+    <!-- clothing -->
+    <style>
+        .clothing {
+            height: 200vh;
+            width: 100vw;
+            background-color: gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px double red;
+        }
+
+        .c img {
+            height: 200px;
+            width: 200px;
+            margin-left: 100px;
+            margin-top: 60px;
+        }
+
+        .c button {
+            background-color: blue;
+            color: white;
+        }
+
+        .c button:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+    <!-- footwear -->
+    <style>
+        .footwear {
+            height: 200vh;
+            width: 100vw;
+            background-color: gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px double red;
+        }
+
+        .fo img {
+            height: 200px;
+            width: 200px;
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+
+        .fo button {
+            background-color: blue;
+            color: white;
+        }
+
+        .fo button:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+    <!-- furniture -->
+    <style>
+        .furniture {
+            height: 200vh;
+            width: 100vw;
+            background-color: gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px double red;
+        }
+
+        .fu img {
+            height: 200px;
+            width: 200px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .fu button {
+            background-color: blue;
+            color: white;
+        }
+
+        .fu button:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- header code here -->
+        <img src="./eimg/app-store.png" alt="Product Image">
+        <nav>
+            <!-- navigation code here -->
+            <ul>
+                <div class="box">
+                    <li><a href="#brand1">Electronics</a></li>
+                    <img src="./eimg/el logo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#brand2">Clothing</a></li>
+                    <img src="./eimg/cloth logo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#brand3">Footwear</a></li>
+                    <img src="./eimg/foot logo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#brand4">Furniture</a></li>
+                    <img src="./eimg/furlogo.jpg" alt="">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- ele -->
+        <div id="brand1">
+            <ul>
+                <div class="box">
+                    Mobile
+                    <img src="./eimg/mobilelogo.jpg" alt="">
+
+                    <li><a href="#vivo">Vivo</a></li>
+
+                    <li><a href="#apple">Apple</a></li>
+
+                    <li><a href="#samsung">samsung</a></li>
+                </div>
+                <div class="box">
+                    Computer
+                    <img src="./eimg/computerlogo.jpg" alt="">
+
+                    <li><a href="#dell">Dell</a></li>
+
+                    <li><a href="#hp">HP</a></li>
+
+                    <li><a href="#lenovo">Lenovo</a></li>
+                </div>
+
+                <div class="box">
+                    Tv
+                    <img src="./eimg/tvlogo.jpg" alt="">
+
+                    <li><a href="#sony">Sony</a></li>
+
+                    <li><a href="#tcl">TCL</a></li>
+
+                    <li><a href="#mi">MI</a></li>
+                </div>
+            </ul>
+        </div>
+        <!-- cloth -->
+        <div id="brand2">
+            <ul>
+                <div class="box">
+                    Women's
+                    <img src="./eimg/womenlogo.jpg" alt="">
+
+                    <li><a href="#top">TOP</a></li>
+
+                    <li><a href="#saree">Saree</a></li>
+                </div>
+                <div class="box">
+                    Men's
+                    <img src="./eimg/menslogo.jpg" alt="">
+
+                    <li><a href="#t-shirt">T-Shirt</a></li>
+
+                    <li><a href="#shirt">Shirt</a></li>
+                </div>
+            </ul>
+        </div>
+        <!-- foot -->
+        <div id="brand3">
+            <ul>
+                <div class="box">
+                    <li><a href="#sandle">Sandle</a></li>
+                    <img src="./eimg/sandle logo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#shoes">Shoes</a></li>
+                    <img src="./eimg/shoeslogo.jpg" alt="">
+                </div>
+
+            </ul>
+        </div>
+        <!-- fur -->
+        <div id="brand4">
+            <ul>
+                <div class="box">
+                    <li><a href="#sofa">Sofa</a></li>
+                    <img src="./eimg/sofalogo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#chair">Chair</a></li>
+                    <img src="./eimg/chairlogo.jpg" alt="">
+                </div>
+                <div class="box">
+                    <li><a href="#table">Table</a></li>
+                    <img src="./eimg/tablelogo.jpg" alt="">
+                </div>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- electronics -->
+    <!-- vivo -->
+    <h2>VIVO</h2>
+    <div class="electronic" id="vivo">
+        <div class="e">
+            <img src="./eimg/vivo1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mobile3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/vivo4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- Apple-->
+    <h2>APPLE</h2>
+    <div class="electronic" id="apple">
+        <div class="e">
+            <img src="./eimg/apple1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mobile4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/apple2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mobile2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mobile4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!--samsung -->
+    <h2>SAMSUNG</h2>
+    <div class="electronic" id="samsung">
+        <div class="e">
+            <img src="./eimg/s.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mobile6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!--dell-->
+    <h2>DELL</h2>
+    <div class="electronic" id="dell">
+        <div class="e">
+            <img src="./eimg/dell1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/dell2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/dell3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/dell5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!--hp-->
+    <h2>HP</h2>
+    <div class="electronic" id="hp">
+        <div class="e">
+            <img src="./eimg/hp1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/hp7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!--lenovo-->
+    <h2>LENOVO</h2>
+    <div class="electronic" id="lenovo">
+        <div class="e">
+            <img src="./eimg/le1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/le2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/le3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <!--sony-->
+    <h2>SONY</h2>
+    <div class="electronic" id="sony">
+        <div class="e">
+            <img src="./eimg/sony1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony10.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony8.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/sony9.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!--MI-->
+    <h2>MI</h2>
+    <div class="electronic" id="mi">
+        <div class="e">
+            <img src="./eimg/mi1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/s2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/mi2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    <!--TCL -->
+    <h2>TCL</h2>
+    <div class="electronic" id="tcl">
+        <div class="e">
+            <img src="./eimg/tcl1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/TCL2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="e">
+            <img src="./eimg/TCL3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- women's -->
+    <!--  top -->
+    <h2>TOP</h2>
+    <div class="clothing" id="top">
+        <div class="c">
+            <img src="./eimg/Top2.png" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/top4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/top5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top9.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top10.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top11.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top12.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/top13.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/top16.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!-- saree -->
+    <h2>SAREE</h2>
+    <div class="clothing" id="saree">
+        <div class="c">
+            <img src="./eimg/saree1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/saree8.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+
+    </div>
+
+    <!-- men's -->
+    <!--tshirt -->
+    <h2>T-SHIRT</h2>
+    <div class="clothing" id="t-shirt">
+        <div class="c">
+            <img src="./eimg/Tshirt1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/Tshirt6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt8.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt9.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt10.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/Tshirt12.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt15.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="c">
+            <img src="./eimg/Tshirt17.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/Tshirt18.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+    <!-- shirts -->
+    <h2>SHIRT</h2>
+    <div class="clothing" id="shirt">
+        <div class="c">
+            <img src="./eimg/shirt1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="c">
+            <img src="./eimg/shirt7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- sandle -->
+    <h2>SANDLE</h2>
+    <div class="footwear" id="sandle">
+        <div class="fo">
+            <img src="./eimg/sandle1.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle2.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle3.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle4.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle5.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle6.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle7.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle8.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle9.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle10.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle11.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+        <div class="fo">
+            <img src="./eimg/sandle12.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <h3>$19.99</h3>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- shoes -->
+        <h2>SHOES</h2>
+        <div class="footwear" id="shoes">
+
+            <div class="fo">
+                <img src="./eimg/shoes 1 (1).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes 1 (2).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes 1 (3).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes4 (1).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes4 (2).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes4 (4).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes4 (3).jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes8.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes9.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes10.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes11.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fo">
+                <img src="./eimg/shoes12.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- sofa -->
+        <h2>SOFA</h2>
+        <div class="furniture" id="sofa">
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa2.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa3.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa4.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa5.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa6.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa7.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa8.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa9.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/sofa10.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur2">
+                <img src="./eimg/furniture2.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- chair -->
+        <h2>CHAIR</h2>
+        <div class="furniture" id="chair">
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha3.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha4.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha5.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha7.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha8.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha9.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur1">
+                <img src="./eimg/cha10.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="fu" id="fur1">
+                <img src="./eimg/furniture1.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur10">
+                <img src="./eimg/furniture10.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+        <!-- table -->
+        <h2>TABLE</h2>
+        <div class="furniture" id="table">
+
+            <div class="fu" id="fur2">
+                <img src="./eimg/table1.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur3">
+                <img src="./eimg/table2.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur4">
+                <img src="./eimg/Furniture4.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur5">
+                <img src="./eimg/furniture5.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur6">
+                <img src="./eimg/table3.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur7">
+                <img src="./eimg/furniture7.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur8">
+                <img src="./eimg/furniture8.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur9">
+                <img src="./eimg/table4.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur9">
+                <img src="./eimg/table5.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur9">
+                <img src="./eimg/table9.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="fu" id="fur9">
+                <img src="./eimg/table10.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Product Description</p>
+                <h3>$19.99</h3>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+</body>
+</body>
+
+</html>
